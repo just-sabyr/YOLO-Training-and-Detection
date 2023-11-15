@@ -7,8 +7,9 @@ import os
 from ultralytics import YOLO
 import cv2
 
-# downloads yolov8 model if is not downloaded yet then loads the model
-model = YOLO('runs/detect/train3/weights/best.pt')
+# yolov8n.pt to load the YOLO version 8 model weights 
+model = YOLO('runs/detect/train2/weights/best.pt')
+
 
 def annotate(img_path, show=False):    
     """
